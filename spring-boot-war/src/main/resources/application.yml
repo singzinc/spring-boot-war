@@ -1,0 +1,11 @@
+zuul:
+  routes:
+    agent:
+      path: /agent/**
+      url: http://localhost:8280/xxx/agent
+    appointment:
+      path: /appointment/**
+      url: http://localhost:8280/xxx/appointment
+    meet:
+      path: /meet/**
+      url: http://localhost:8280/xxx/meet
