@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 @EnableZuulProxy
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer{
-
+// insert the comment
 	 @Override
 	 protected SpringApplicationBuilder configure( SpringApplicationBuilder application) {
 	        return application.sources(Application.class);
