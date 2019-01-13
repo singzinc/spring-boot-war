@@ -26,7 +26,8 @@ public class RestExampleController {
 	
 	@RequestMapping("example1")
 	String home() {
-		return "Hello World! this is 2" + ui;
+		String prefix = System.getenv().getOrDefault("SPECIAL_LEVEL_KEY", "Hi");
+		return "Hello World! this is 2" + ui + " " + prefix;
 	}
 
 	@RequestMapping(value = "example2", method = RequestMethod.GET)
