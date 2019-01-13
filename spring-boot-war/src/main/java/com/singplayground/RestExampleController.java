@@ -15,7 +15,7 @@ public class RestExampleController {
 
 	@RequestMapping("example1")
 	String home() {
-		return "Hello World!";
+		return "Hello World! this is 2";
 	}
 
 	@RequestMapping(value = "example2", method = RequestMethod.GET)
